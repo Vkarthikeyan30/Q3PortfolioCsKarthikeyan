@@ -2,7 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2nd Graded 3rd Quarter</title>
+<title>Marine Club Applications</title>
 
 <style>
  p {
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <p>Enter your information.</p>
     <input type="number" id="StudentID" placeholder="Student ID:" />
     <p></p>
     <input type="text" id="FullName" placeholder="Full Name:" />
@@ -26,6 +27,25 @@
     <p></p>
     <input type="text" id="PhoneNo" placeholder="Phone Number:" />
     <p></p>
+    <p>What club do you want to join?</p>
+    <select>
+        <option value="option1">Fantastic Fish</option>
+        <option value="option2">Sensational Squids</option>
+        <option value="option3">Sensible Salamanders</option>
+        <option value="option4">Courteous Crabs</option>
+        <option value="option5">Turbulent Turtles</option>
+      </select>
+
+    <p>Why do you want to join?</p>
+    <form action="/submit" method="post">
+        <label for="reasons"></label>
+        <textarea id="reasons" name="reasons" rows="4" cols="50">
+        </textarea>
+        <p></p>
+        <input type="submit" value="Submit">
+        </form>
+        <p></p>
+
     <button onsubmit="">Accept Input</button>
 </body>
 
